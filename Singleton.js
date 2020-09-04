@@ -1,6 +1,9 @@
-class Counter{
-    constructor(){
-        if(typeof Counter.instance == 'object'){
+class Counter
+{
+    constructor()
+    {
+        if(typeof Counter.instance == 'object')
+        {
             return Counter.instance;
         }
         this.count = 0;
@@ -8,12 +11,14 @@ class Counter{
         return this;
     }
     
-    getCounter(){
+    getCounter()
+    {
         return this.count;
     }
     
-    increaseCounter(){
+    increaseCounter()
+    {
         return this.count++;
     }
 }
-//console.log('hello world');
+console.log('hello world');
