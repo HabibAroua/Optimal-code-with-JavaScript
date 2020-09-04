@@ -29,3 +29,4 @@ const x6 = bmw.create('X6');
 
 console.log(x5);
 console.log(x6);
+//https://www.youtube.com/watch?v=LDA4riuzgiw&list=PLNkWIWHIRwMGzgvuPRFkDrpAygvdKJIE4&index=4
