@@ -7,3 +7,11 @@ class car
         this.signaling = false;
     }
 }
+
+class CarBuilder
+{
+    constructor()
+    {
+        this.car = new car();
+    }
+}
