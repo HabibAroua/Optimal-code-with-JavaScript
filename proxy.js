@@ -40,3 +40,11 @@ class SecuritySystem
         this.door.close();
     }
 }
+
+//test
+
+const door = new SecuritySystem(new CarAccess());
+
+door.open('Jack');
+door.open('Ilon');
+door.close();
