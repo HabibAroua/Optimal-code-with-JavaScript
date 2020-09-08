@@ -1,4 +1,4 @@
-class Convetor
+class Conveyor
 {
     setBody()
     {
@@ -76,3 +76,8 @@ class ConveyorFacade
         this.car.setInterior();
     }
 }
+
+const conveyor = new ConveyorFacade(new Conveyor());
+let car = conveyor.assembleCar();
+car = conveyor.changeEngine();
+car = conveyor.changeInterior();
