@@ -45,3 +45,22 @@ class Convetor
         console.log('Car painted!');
     }
 }
+
+class ConveyorFacade
+{
+    constructor(car)
+    {
+        this.car = car;
+    }
+    
+    assembleCar()
+    {
+        this.car.setBody();
+        this.car.setEngine();
+        this.car.setInterior();
+        this.car.setExterior();
+        this.car.setWheels();
+        this.car.addElectronics();
+        this.car.paint();
+    }
+}
