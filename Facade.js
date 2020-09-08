@@ -63,4 +63,16 @@ class ConveyorFacade
         this.car.addElectronics();
         this.car.paint();
     }
+    
+    changeEngine()
+    {
+        this.car.getEngine();
+        this.car.setEngine();
+    }
+    
+    changeInterior()
+    {
+        this.car.getInterior();
+        this.car.setInterior();
+    }
 }
