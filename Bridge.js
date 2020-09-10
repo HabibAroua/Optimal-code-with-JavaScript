@@ -18,3 +18,19 @@ class Color
         return this.type;
     }
 }
+
+class BlackColor extends Color
+{
+    constructor()
+    {
+        super("dark-black");
+    }
+}
+
+class SilbrigColor extends Color
+{
+    constructor()
+    {
+        super("Silbermetallic");
+    }
+}
