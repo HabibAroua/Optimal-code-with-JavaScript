@@ -27,3 +27,12 @@ class AutoFactory
         console.table(this.models);
     }
 }
+
+const factory = new AutoFactory();
+
+const bmw = factory.create('BMw');
+const audi = factory.create('Audi');
+const tesla = factory.create('Tesla');
+const blackTesla = factory.create('Tesla');
+
+console.log(factory.getModels());
