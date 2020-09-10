@@ -34,3 +34,30 @@ class SilbrigColor extends Color
         super("Silbermetallic");
     }
 }
+
+class Audi extends Model
+{
+    constructor(color)
+    {
+        super(color);
+    }
+    
+    paint()
+    {
+        return `Auto : Audi, Color: ${this.color.get()}`;
+    }
+}
+
+class Bmw extends Model
+{
+    constructor()
+    {
+        super(color);
+    }
+    
+    paint()
+    {
+        return `Auto : Bmw, Color: ${this.color.get()}`;
+    }
+}
+
