@@ -35,3 +35,20 @@ class Auto
     }
 }
 
+//engine 2.0
+const myCar = new Auto();
+const oldEngine = new Engine2();
+
+myCar.startEngine(oldEngine);
+
+//Engine V8 with adapter
+const myCar1 = new Auto();
+const engineAdapter = new EngineV8Adapter(new EngineV8());
+
+myCar1.startEngine(engineAdapter);
+
+//Engine V8 without adapter
+//const myCar2 = new Auto();
+//const engineAdapter1 = new EngineV8();
+
+//myCar2.startEngine(engineAdapter1); error
