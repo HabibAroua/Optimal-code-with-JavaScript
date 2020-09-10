@@ -50,7 +50,7 @@ class Audi extends Model
 
 class Bmw extends Model
 {
-    constructor()
+    constructor(color)
     {
         super(color);
     }
@@ -61,3 +61,6 @@ class Bmw extends Model
     }
 }
 
+const blackBmw = new Bmw(new BlackColor());
+
+console.log(blackBmw.paint());
