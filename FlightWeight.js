@@ -21,4 +21,9 @@ class AutoFactory
         this.models[name] = new Auto(name);
         return this.models[name];
     }
+    
+    getModels()
+    {
+        console.table(this.models);
+    }
 }
