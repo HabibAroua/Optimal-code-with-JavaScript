@@ -13,3 +13,25 @@ class EngineV8
         console.log('Engine V8! - wroom wroom!');
     }
 }
+
+class EngineV8Adapter
+{
+    constructor(engine)
+    {
+        this.engine = engine;
+    }
+    
+    simpleInterface()
+    {
+        this.engine.complecatedInterface();
+    }
+}
+
+class Auto
+{
+    startEngine(engine)
+    {
+        engine.simpleInterface();
+    }
+}
+
