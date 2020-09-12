@@ -29,6 +29,11 @@ class Account
     {
         this.incomer = account;
     }
+    
+    show()
+    {
+        console.log(this);
+    }
 }
 
 class Master extends Account
@@ -69,3 +74,5 @@ master.setNext(paypal);
 master.setNext(qiwi);
 
 master.pay(438);
+
+master.show();
