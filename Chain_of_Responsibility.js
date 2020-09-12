@@ -60,3 +60,12 @@ class Qiwi extends Account
         this.balance = balance;
     }
 }
+
+const master = new Master(100);
+const paypal = new Paypal(200);
+const qiwi = new Qiwi(500);
+
+master.setNext(paypal);
+master.setNext(qiwi);
+
+master.pay(438);
