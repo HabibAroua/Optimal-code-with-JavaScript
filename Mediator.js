@@ -43,3 +43,13 @@ class Customer
         this.dealerMediator.orderAuto(this, auto, info);
     }
 }
+
+const mediator = new OfficialDealer();
+
+const yauhen = new Customer('Yauhen', mediator);
+const valera = new Customer('Valera', mediator);
+
+yauhen.makeOrder('Tesla','With autopilot');
+valera.makeOrder('Audi','With parktronik');
+
+console.log(mediator.getCustomersList());
