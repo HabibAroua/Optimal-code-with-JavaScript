@@ -31,3 +31,7 @@ class AutoCart
         this.amount = amount;
     }
 }
+
+const baseCustomer = new AutoCart(baseStrategy);
+const premiumCustomer = new AutoCart(premiumStrategy);
+const platinumCustomer = new AutoCart(platinumStrategy);
