@@ -8,3 +8,19 @@ class Builder
         this.collectAccessoires();
     }
 }
+
+class TeslaBuilder extends Builder
+{
+    addEngine(){}
+    installChassis(){}
+    addElectronic(){}
+    collectAccessoires(){}
+}
+
+class BmwBuilder extends Builder
+{
+    addEngine(){}
+    installChassis(){}
+    addElectronic(){}
+    collectAccessoires(){}
+}
