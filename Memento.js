@@ -31,3 +31,11 @@ class Caretaker
     }
 }
 
+const careTaker = new Caretaker();
+
+careTaker.addMemento(creator.save('Hello'));
+careTaker.addMemento(creator.save('Hello world'));
+careTaker.addMemento(creator.save('Hello world !!!'));
+
+console.log(creator.restore(careTaker.getMemento(1)));
+
