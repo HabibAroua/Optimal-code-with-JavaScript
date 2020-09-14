@@ -11,16 +11,44 @@ class Builder
 
 class TeslaBuilder extends Builder
 {
-    addEngine(){}
-    installChassis(){}
-    addElectronic(){}
-    collectAccessoires(){}
+    addEngine()
+    {}
+    
+    installChassis()
+    {
+        
+    }
+    
+    addElectronic()
+    {
+        
+    }
+    
+    collectAccessoires()
+    {
+        
+    }
 }
 
 class BmwBuilder extends Builder
 {
-    addEngine(){}
-    installChassis(){}
-    addElectronic(){}
-    collectAccessoires(){}
+    addEngine()
+    {
+        
+    }
+    
+    installChassis()
+    {
+        
+    }
+    
+    addElectronic()
+    {
+        
+    }
+    
+    collectAccessoires()
+    {
+        
+    }
 }
