@@ -28,3 +28,29 @@ class Engine
         this.state = false;
     }
 }
+
+class OnStartCommand
+{
+    constructor(engine)
+    {
+        this.engine = engine;
+    }
+    
+    execute()
+    {
+        this.engine.on();
+    }
+}
+
+class OnSwitchOffCommand
+{
+    constructor(engine)
+    {
+        this.engine = engine;
+    }
+    
+    execute()
+    {
+        this.engine.off();
+    }
+}
