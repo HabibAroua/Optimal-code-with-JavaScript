@@ -36,3 +36,25 @@ class Audi
         visitor(this);
     }
 }
+
+function exportVisitor(auto)
+{
+    if(auto instanceof Tesla)
+    {
+        auto.export = console.log(`Exported data : $(auto.info())`);
+    }
+    else
+    {
+        if(auto instanceof Bmw)
+        {
+            auto.export = console.log(`Exported data : $(auto.info())`);
+        }
+        else
+        {
+            if(auto instanceof Audi)
+            {
+                auto.export = console.log(`Exported data : $(auto.info())`);
+            }
+        }
+    }
+}
