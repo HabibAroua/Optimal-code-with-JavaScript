@@ -27,3 +27,19 @@ class AutoNews
         this.actions = this.action.filter(el => !(el instanceof observer));
     }
 }
+
+class Jack
+{
+    inform(message)
+    {
+        console.log(`Jack has been informed about: ${message}`);
+    }
+}
+
+class Max
+{
+    inform(message)
+    {
+        console.log(`Max has been informed about: ${message}`);
+    }
+}
