@@ -12,7 +12,7 @@ class OrderStatus
     }
 }
 
-class WaitingPayment extends OrderStatus
+class WaitingForPayment extends OrderStatus
 {
     constructor()
     {
@@ -47,4 +47,17 @@ class Order
     {
         this.state = this.state.next();
     }
+    
+    cancelOrder()
+    {
+        this.state.name === 'waitingForPayment' ?
+            console.log('Order is canceled') :
+            console.log('Order can not be canceled!');
+    }
 }
+
+const myOrder = new Order();
+
+console.log(myOrder.state.name);
+
+myOrder.cancelOrder();
