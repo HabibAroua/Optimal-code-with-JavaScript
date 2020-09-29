@@ -50,9 +50,7 @@ class Order
     
     cancelOrder()
     {
-        this.state.name === 'waitingForPayment' ?
-            console.log('Order is canceled') :
-            console.log('Order can not be canceled!');
+        this.state.name === 'waitingForPayment' ? console.log('Order is canceled') : console.log('Order can not be canceled!');
     }
 }
 
