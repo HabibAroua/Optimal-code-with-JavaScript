@@ -35,3 +35,16 @@ class Delivered extends OrderStatus
         super('delivered',Delivered);
     }
 }
+
+class Order
+{
+    constructor()
+    {
+        this.state = new WaitingForPayment();
+    }
+    
+    nextState()
+    {
+        this.state = this.state.next();
+    }
+}
